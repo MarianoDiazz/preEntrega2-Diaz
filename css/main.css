@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    max-height: 50rem;
+    object-fit: contain;
+}
+
+.info {
+    padding: 0;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a a"
+        "b b c c"
+        "b b d d";
+
+    height: 100vw;
+    width: 100vw;
+
+
+
+}
+
+.box1 {
+    grid-area: a;
+    background-image: url();
+
+}
+
+.box2 {
+    grid-area: b;
+    background-color: bisque;
+}
+
+.box3 {
+    grid-area: c;
+    background-color: aquamarine;
+}
+
+.box4 {
+    grid-area: d;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 475px) {
+    .info {
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección de los elementos flexibles */
+        align-items: center; /* Centrar los elementos horizontalmente */
+        width: 100%;
+    }
+    /* Otros estilos específicos para pantallas con altura menor o igual a 475px */
+}
