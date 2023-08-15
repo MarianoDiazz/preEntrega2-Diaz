@@ -4,56 +4,208 @@
     box-sizing: border-box;
 }
 
-.slider {
-    max-height: 50rem;
-    object-fit: contain;
+/* CAROUSEL */
+.carousel-inner {
+    position: relative;
 }
 
+.title-highlight {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+
+.carousel-indicators button.active {
+    background-color: #ffffff;
+}
+
+/* SECCION GRID */
 .info {
     padding: 0;
-    background-color: aqua;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
         "a a a a"
         "b b c c"
         "b b d d";
+    width: 100%;
+    align-items: center;
+}
 
-    height: 100vw;
-    width: 100vw;
-
-
+.box {
+    min-height: 15rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
 
 }
 
+.box h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.info:hover .box:not(:hover) {
+    opacity: 0.8;
+    filter: blur(3px);
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
 .box1 {
     grid-area: a;
-    background-image: url();
-
+    background-image: url('https://img.freepik.com/foto-gratis/encantadoras-mascotas-mimadas-juegan-lado-lado-mirando-alerta-generada-ia_188544-13933.jpg?w=1380&t=st=1692042899~exp=1692043499~hmac=8c100edfd3cbd34c7247e99c74a1e16956cd97a90e6cdeb4bd7d3a1ad280d748');
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box2 {
     grid-area: b;
-    background-color: bisque;
+    background-image: url('https://img.freepik.com/foto-gratis/marido-mujer-positivos-juegan-perro-hombre-camisa-rayas-abraza-labrador-ternura_197531-13723.jpg?w=1380&t=st=1692042691~exp=1692043291~hmac=5e119b61b3ba43e31b0c19cdab2f3909092e9d69082e613ee1ecaa11861f4d2c');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .box3 {
     grid-area: c;
-    background-color: aquamarine;
+    background-image: url('https://img.freepik.com/foto-gratis/perro-rescate-disfrutando-ser-mascota-mujer-refugio_23-2148682929.jpg?w=1480&t=st=1692042366~exp=1692042966~hmac=1a5c2124d948a9c1945d558e6aef99140f3e3545737cb1856d1dbcdb71553030');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box4 {
     grid-area: d;
-    background-color: blueviolet;
+    background-image: url('https://img.freepik.com/foto-gratis/arreglo-comida-mascotas-naturaleza-muerta_23-2148982349.jpg?w=1480&t=st=1692043357~exp=1692043957~hmac=a36ea4e329115e1298f3ba26ad7bfc4049e68e81037ba992886a41dc62f66933');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
+/* CARDS ADOPCION */
+.custom-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.custom-card img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.custom-btn {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.custom-btn:hover {
+    background-color: #ff4f4f;
+    border-color: #ff4f4f;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #ff4f4f;
+    padding: 40px 0;
+    color: #333;
+    text-align: center;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 24px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
 
 @media screen and (max-width: 475px) {
     .info {
         display: flex;
-        flex-direction: column; /* Cambiar la dirección de los elementos flexibles */
-        align-items: center; /* Centrar los elementos horizontalmente */
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
-    /* Otros estilos específicos para pantallas con altura menor o igual a 475px */
+
+    .box {
+        margin: 0;
+        width: 100%;
+    }
 }
