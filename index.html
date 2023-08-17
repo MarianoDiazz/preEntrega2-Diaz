@@ -26,16 +26,17 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/adoptar.html">Quiero Adoptar</a>
+                    </li>
+
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
             </div>
         </div>
     </nav>
@@ -57,14 +58,14 @@
                 <img src="https://img.freepik.com/foto-gratis/retrato-grupo-adorables-cachorros_53876-64796.jpg?w=1380&t=st=1692041890~exp=1692042490~hmac=9753a1dfd62c927a781d95747b6eba0230262e3706ea44f33e7e670b8a00179d"
                     class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 class="title-highlight">Encuentra a tu compañero peludo</h2>
+                    <h2 class="title-highlight-principal">Encuentra a tu compañero peludo</h2>
                     <p class="subtitle">Explora nuestra selección de mascotas y dales un hogar amoroso.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://img.freepik.com/foto-gratis/apuesto-joven-jugando-dueno-perro-cachorro-negro-lindo-acariciando-pug-pie-sobre-backgro-blanco_1258-164911.jpg?w=1380&t=st=1692065356~exp=1692065956~hmac=bf3c9dd67cdffae20e95e9025e35b05cb617b9fc4064fb990c860c20cfc9e7e1"
                     class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-end">
+                <div class="text-carousel d-none d-md-block text-end">
                     <h2 class="title-highlight">Amor y compañía para tu hogar</h2>
                     <p class="subtitle">Brinda un nuevo hogar a estas adorables mascotas y recibe amor incondicional.
                     </p>
@@ -73,7 +74,7 @@
             <div class="carousel-item">
                 <img src="https://img.freepik.com/foto-gratis/alegre-medico-veterinario-guantes-goma-mascara-medica-examinando-lindo-perro-pug-negro-sta_1258-160778.jpg?w=1380&t=st=1692042164~exp=1692042764~hmac=d480f629135edbbf2ba67f91691f41ccc451b19abafd9bf805d11b94481ca852"
                     class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-end">
+                <div class="text-carousel d-none d-md-block text-end">
                     <h2 class="title-highlight">Cuidado y atención profesional</h2>
                     <p class="subtitle">Nuestro equipo de veterinarios se preocupa por la salud y el bienestar de tus
                         mascotas.</p>
@@ -92,6 +93,8 @@
         </button>
     </div>
 
+
+    <!-- SECCION CARDS -->
     < <section class="container">
         <h1 class="text-center">Ellos esperan por ti </h1>
         <div class="row">
@@ -183,14 +186,10 @@
             <div class="text-center">
                 <button class="btn btn-outline-danger">Ver mas</button>
             </div>
-
-
-
-
             </section>
 
             <!-- SECCION GRID -->
-            <section class="container-fluid info my-5">
+            <section class="container info my-5">
                 <div class="box box1">
                     <h1>Brindamos siempre lo mejores para ellos</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
@@ -207,43 +206,37 @@
             </section>
 
 
-
-
-
-
-
+            <!-- FOOTER -->
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <h4>Contacto</h4>
-                            <p>¡Contáctanos para más información sobre nuestros servicios!</p>
-                            <p>Email: info@veterinaria.com</p>
-                            <p>Teléfono: 123-456-7890</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Síguenos en redes sociales</h4>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <div class="col-md-4">
+                            <h3 class="footer-title">Enlaces</h3>
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-link">Adoptar mascota</a></li>
+                                <li><a href="#" class="footer-link">Galería</a></li>
+                                <li><a href="#" class="footer-link">Sobre nosotros</a></li>
                             </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="footer-title">Donar</h3>
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-link">Cómo donar</a></li>
+                                <li><a href="#" class="footer-link">Programas de donación</a></li>
+                                <li><a href="#" class="footer-link">Colaboradores</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="footer-title">Suscríbete</h3>
+                            <p class="footer-subscribe-text">Recibe noticias y actualizaciones por correo electrónico.</p>
+                            <form class="footer-form">
+                                <input type="email" class="footer-input" placeholder="Ingresa tu correo electrónico">
+                                <button type="submit" class="footer-button">Suscribirse</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </footer>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -5,15 +5,19 @@
 }
 
 /* CAROUSEL */
-.carousel-inner {
-    position: relative;
-}
 
 .title-highlight {
     font-size: 3.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 1rem;
+    color: #ff6b6b;
+    font-weight: 900;
+}
+
+.title-highlight-principal {
+    font-size: 4rem;
+    color: #ff6b6b;
+    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2;
+    font-weight: 900;
+
 }
 
 .subtitle {
@@ -21,6 +25,12 @@
     color: #7f8c8d;
 }
 
+.text-carousel {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin-right: 3rem;
+}
 
 .carousel-indicators button.active {
     background-color: #ffffff;
@@ -76,7 +86,7 @@
 }
 
 .box:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
@@ -152,39 +162,323 @@
 }
 
 /* FOOTER */
+
 .footer {
-    background-color: #ff4f4f;
-    padding: 40px 0;
-    color: #333;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
 }
 
-.footer h4 {
+.footer-title {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.footer p {
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-link {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff9900;
+}
+
+.footer-subscribe-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.footer-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #ffbf4d;
+}
+
+/* ======== */
+/* PAGINA ADOPTAR */
+/* ========= */
+.adopt__img {
+    width: 100vw;
+    max-height: 45rem;
+    object-fit: cover;
+}
+
+.adopt__text {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.form__adopt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.form__adopt h1 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-select {
+    flex: 1;
+    max-width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
     font-size: 14px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.icon-button i {
+    font-size: 36px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.icon-button:hover i {
+    color: #ff9900;
+}
+
+.find-friend-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.find-friend-button:hover {
+    background-color: #ffbf4d;
+}
+
+/* SECCION INFO */
+
+.adopt__info {
+    background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-hermoso-perro-espacio-copia_23-2148786560.jpg?w=1800&t=st=1692218237~exp=1692218837~hmac=570a03397a06fc5dc0195be2ceeb90af4b7f68c0c26db7d78d25f22f3497045f");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.adopt__info__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.adopt__info_parrafo {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #555;
+
+}
+
+.adopt-button {
+    background-color: #3b3b3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adopt-button:hover {
+    background-color: #ffbf4d;
+    color: #333;
+}
+
+
+.adopt__process-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.adopt__section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.adopt__process-step {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.adopt__process-icon {
+    font-size: 36px;
+    color: #ff9900;
     margin-bottom: 10px;
 }
 
-.social-icons {
-    list-style: none;
-    padding: 0;
-}
-
-.social-icons li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-icons a {
-    color: #333;
+.adopt__process-title {
     font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
 }
+
+.adopt__process-text {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+/* ============= */
+/* NOSOTROS PAGE */
+/* ============= */
+
+.about-section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    font-weight: 900;
+    color: #17A398;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-subtitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
 
 
 /* MEDIA QUERIES */
+@media (max-width: 1110px) {
+    .title-highlight {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: #7f8c8d;
+    }
+
+    .adopt__text {
+        display: none;
+    }
+}
+
+@media (max-width: 995px) {
+    .about-section {
+        display: flex;
+        padding: 40px 0;
+    }
+
+    .about-image {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .about-subtitle {
+        font-size: 22px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
         padding: 30px 0;
@@ -208,4 +502,18 @@
         margin: 0;
         width: 100%;
     }
+
+    .adopt__info {
+        background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-hermoso-perro-espacio-copia_23-2148786560.jpg?w=1800&t=st=1692218237~exp=1692218837~hmac=570a03397a06fc5dc0195be2ceeb90af4b7f68c0c26db7d78d25f22f3497045f");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+
+    }
+
+    .adopt__info_parrafo {
+        display: none;
+    }
+
 }
